@@ -23,32 +23,28 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="datetime-local"] {
+input, select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background: #007BFF;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #218838;
+    background: #0056b3;
 }
 
 .results {
     margin-top: 20px;
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
 }
 
 .timezone {
