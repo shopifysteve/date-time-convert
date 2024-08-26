@@ -10,8 +10,34 @@
     <div class="container">
         <h1>Date and Time Converter</h1>
         <label for="datetime">Enter Date and Time:</label>
-        <input type="datetime-local" id="datetime" required>
-        <button id="convert">Convert</button>
+        <input type="datetime-local" id="datetime" />
+        
+        <label for="timezone">Select Time Zone:</label>
+        <select id="timezone">
+            <option value="UTC">UTC</option>
+            <option value="GMT">GMT</option>
+            <option value="EST">EST (Eastern Standard Time) - GMT -5</option>
+            <option value="EDT">EDT (Eastern Daylight Time) - GMT -4</option>
+            <option value="CST">CST (Central Standard Time) - GMT -6</option>
+            <option value="CDT">CDT (Central Daylight Time) - GMT -5</option>
+            <option value="MST">MST (Mountain Standard Time) - GMT -7</option>
+            <option value="MDT">MDT (Mountain Daylight Time) - GMT -6</option>
+            <option value="PST">PST (Pacific Standard Time) - GMT -8</option>
+            <option value="PDT">PDT (Pacific Daylight Time) - GMT -7</option>
+            <option value="CET">CET (Central European Time) - GMT +1</option>
+            <option value="CEST">CEST (Central European Summer Time) - GMT +2</option>
+            <option value="IST">IST (Indian Standard Time) - GMT +5:30</option>
+            <option value="CST">CST (China Standard Time) - GMT +8</option>
+            <option value="JST">JST (Japan Standard Time) - GMT +9</option>
+            <option value="KST">KST (Korea Standard Time) - GMT +9</option>
+            <option value="AEDT">AEDT (Australian Eastern Daylight Time) - GMT +11</option>
+            <option value="ACDT">ACDT (Australian Central Daylight Time) - GMT +10:30</option>
+            <option value="AWST">AWST (Australian Western Standard Time) - GMT +8</option>
+            <option value="NZDT">NZDT (New Zealand Daylight Time) - GMT +13</option>
+            <option value="NZST">NZST (New Zealand Standard Time) - GMT +12</option>
+        </select>
+        
+        <button id="convertBtn">Convert</button>
         
         <div id="results" class="results"></div>
     </div>
