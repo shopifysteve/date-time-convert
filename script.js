@@ -47,4 +47,12 @@ document.getElementById('convertBtn').addEventListener('click', function() {
         
         resultsDiv.innerHTML += `<div class="timezone">${tz} (GMT ${tzOffset >= 0 ? '+' : ''}${tzOffset}): ${formattedDate}</div>`;
     }
+
+    // Generate the URL
+    const date = localDate.toISOString().split('T')[0]; // YYYY-MM-DD
+    const time = localDate.toTimeString().split(' ')[0].substring(0, 5); // HH:MM
+    const url = `?date=${date}&time=${time}&timezone=${selectedTimezone}`;
+    
+    // Display the generated URL
+    document.getElementById('generatedUrl').value = window.location.origin + url;
 });
